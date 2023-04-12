@@ -1,19 +1,19 @@
-import Outlet from "./Outlet";
 import LeftBar from "./LeftBar";
 import TopBar from "./Topbar";
 import RightBar from "./RightBar";
+import Home from "./Home";
 
-const Navbar = () => {
+const Index = () => {
     return ( 
         <div>
             <TopBar/>
             <div style={{display: "flex"}}>
                 <LeftBar/>
-                <Outlet/>
+                <Home/>
                 <RightBar/>
             </div>
         </div>
      );
 }
  
-export default Navbar;
+export default Index;

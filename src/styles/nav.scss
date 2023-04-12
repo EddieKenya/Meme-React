@@ -8,11 +8,13 @@ border-bottom: 1px solid lightgrey;
 position: sticky;
 top: 0;
 background-color: white;
+z-index: 999;
 
     .left{
      display: flex;
      align-self: center;
      gap: 30px;
+     cursor: pointer;
         span{
             font-weight: bold;
             font-size: 25px;
@@ -37,6 +39,7 @@ background-color: white;
         display: flex;
         align-items: center;
         gap: 20px;
+        cursor: pointer;
         .user{
             display: flex;
             align-items: center;
