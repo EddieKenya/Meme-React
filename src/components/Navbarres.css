@@ -1,0 +1,84 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .NavBar__logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .NavBar__menu {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #f1f1f1;
+  }
+  
+  .NavBar__menu.open {
+    height: auto;
+  }
+  
+  .NavBar__menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .NavBar__menu li {
+    padding: 1rem;
+  }
+  
+  .NavBar__menu li a {
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .NavBar__menu li a:hover {
+    color: #000;
+  }
+  
+  .NavBar__menu-button {
+    display: block;
+    position: relative;
+    width: 2.5rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+  
+  .NavBar__menu-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .NavBar__menu-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 4px;
+  }
+  
+  .NavBar__menu-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .NavBar__menu-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .NavBar__menu-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  

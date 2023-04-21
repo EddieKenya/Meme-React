@@ -1,0 +1,19 @@
+[
+    {
+        "user": "Edwin Makhanu",
+        "age" : "28",
+        "nationality" : "Kenyan"
+    },
+    {
+        "user": "Timothy Simiyu",
+        "age" : "22",
+        "nationality" : "Uganda"
+    },
+    {
+        "user": "Mercy Nekesa",
+        "age" : "18",
+        "nationality" : "American"
+    }
+
+
+]

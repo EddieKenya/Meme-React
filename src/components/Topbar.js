@@ -7,6 +7,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Link } from 'react-router-dom';
 import '../styles/nav.scss'
+import './DrawerToggle'
+import { Drawer, ToggleButton } from '@mui/material';
 
 const TopBar = () => {
     return ( 
@@ -19,8 +21,13 @@ const TopBar = () => {
                 <DarkModeIcon/>
                 <GridViewIcon/>
                 <div className='search'>
-                    <SearchIcon/>
                     <input type="text" placeholder='Search...'/>
+                    <SearchIcon/>
+                </div>
+                <div className='result'>
+                    {/* {Data.map((value, key) => {
+                        return <a className='DataItem' href='#'>{value.user}</a>
+                    })} */}
                 </div>
             </div>
             <div className='right'>
